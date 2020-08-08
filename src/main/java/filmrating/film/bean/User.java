@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="film")
+@Table(name="user")
 @JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
 public class User {
     @Id

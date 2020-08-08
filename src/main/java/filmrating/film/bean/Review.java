@@ -1,9 +1,12 @@
 package filmrating.film.bean;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="review")
+@JsonIgnoreProperties({"handler","hibernateLazyInitializer"})
 public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
