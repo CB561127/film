@@ -16,5 +16,7 @@ public interface FilmDao extends JpaRepository<Film,Integer> {
     List<Film> findByCastLike(String cast);
     List<Film> findByScore(Double score);
     List<Film> findByCountryLike(String country);
+    List<Film> findByWesttag(String tag);
+    List<Film> findByDescriptionLike(String str);
 
 }

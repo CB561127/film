@@ -22,6 +22,7 @@ public class Film {
     int number;
     String director;
     String cast;
+    String westtag;
 
     public void setFid(int fid) {
         this.fid = fid;
@@ -109,5 +110,19 @@ public class Film {
 
     public String getDirector() {
         return director;
+    }
+
+    public void setWesttag(String tag){
+        this.westtag = tag;
+    }
+
+    public String getWesttag() {
+        return westtag;
+    }
+    @Override
+    public String toString() {
+            return "电影名字："+name+"\'"+
+                    "分数："+score+"\'"+
+                    "地区："+country+"\'";
     }
 }

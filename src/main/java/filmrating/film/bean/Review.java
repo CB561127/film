@@ -14,7 +14,7 @@ public class Review {
     int fid;
     int uid;
     String content;
-    int like;
+    int love;
 
     public void setUid(int uid) {
         this.uid = uid;
@@ -48,11 +48,11 @@ public class Review {
         return content;
     }
 
-    public void setLike(int like) {
-        this.like = like;
+    public void setLove(int love) {
+        this.love = love;
     }
 
-    public int getLike() {
-        return like;
+    public int getLove() {
+        return love;
     }
 }
