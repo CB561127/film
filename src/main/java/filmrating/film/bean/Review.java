@@ -3,6 +3,7 @@ package filmrating.film.bean;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name="review")
@@ -15,6 +16,7 @@ public class Review {
     int uid;
     String content;
     int love;
+    Date reviewdate;
 
     public void setUid(int uid) {
         this.uid = uid;
@@ -54,5 +56,13 @@ public class Review {
 
     public int getLove() {
         return love;
+    }
+
+    public void setDate(Date t) {
+        this.reviewdate = t;
+    }
+
+    public Date getDate() {
+        return reviewdate;
     }
 }
